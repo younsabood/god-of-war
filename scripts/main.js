@@ -161,13 +161,13 @@ for (let i = 0; i < navfilter.length; i++) {
             navfilter[i].style.width = "30%";
           }, 300);
           setTimeout(() => {
-              for (let ar = 0; ar < artecal.length; ar++) {
-                if (artecal[ar].classList.contains(x[j])) {
-                  artecal[ar].style.display = "block";
-                } else {
-                  artecal[ar].style.display = "none";
-                }
+            for (let ar = 0; ar < artecal.length; ar++) {
+              if (artecal[ar].classList.contains(x[j])) {
+                artecal[ar].style.display = "block";
+              } else {
+                artecal[ar].style.display = "none";
               }
+            }
           }, 1800);
         };
       }
@@ -190,5 +190,3 @@ cancel.onclick = function () {
     }
   }
 };
-let caracter = document.getElementsByClassName("caracter");
-let carjpg = document.querySelectorAll(".carjpg");
