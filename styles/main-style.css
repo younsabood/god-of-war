@@ -19,8 +19,7 @@ html {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  background: linear-gradient(rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234));
-
+  background: #701a1c;
 }
 ul {
   list-style: none;
@@ -57,7 +56,7 @@ a {
 }
 
 .over-lay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .cont-one {
@@ -558,7 +557,7 @@ a {
   height: auto;
   margin-bottom: 10px;
 }
-.cartag{
+.cartag {
   background-color: #00aced;
 }
 .cart {
@@ -610,7 +609,7 @@ a {
 }
 .cartname {
   opacity: 1;
-  width: calc(100% - 120px)  ;
+  width: calc(100% - 120px);
   left: calc(0% + 110px);
   height: 100%;
   transition: 1.5s;
@@ -630,7 +629,7 @@ a {
   -ms-transition: 2s;
   -o-transition: 2s;
 }
-.cardis span{
+.cardis span {
   text-align: center;
   width: 90%;
   height: 90%;
@@ -659,7 +658,104 @@ a {
 .caracter:hover > .cardis {
   height: 0%;
 }
+.more {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.more:hover {
+  padding-top: 10px;
+}
+.mcont {
+  background-color: #701a1c;
+  width: 90%;
+  height: 20%;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.marrow {
+  color: #000;
+  position: absolute;
+  animation-name: arrow-more;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.dad-foot {
+  box-shadow: 0 -8px 10px 0 rgba(0, 0, 0, 0.2),
+    0 -8px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 50px;
+  padding-top: 5px;
+  height: auto;
+  border-top-left-radius: 15% 50%;
+  border-top-right-radius: 15% 50%;
+}
+.footer {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#foot {
+  text-align: center;
+  color: #701a1c;
+}
+.foot-ul li i {
+  color: black;
+  text-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.foot-ul li .fa-facebook-f:hover {
+  color: blue;
+}
+.foot-ul li .fa-instagram:hover {
+  color: transparent;
+  font-weight: bold;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.foot-ul li .fa-youtube:hover {
+  color: red;
+}
+.foot-ul li .fa-twitter:hover {
+  color: #00aced;
+}
 @media (max-width: 300px) {
+  .footer,
   .cont-three,
   .cont-one,
   .cont-two {
@@ -686,6 +782,7 @@ a {
     flex-direction: column;
     justify-content: space-evenly;
   }
+  .footer,
   .cont-three,
   .cont-one,
   .cont-two {
@@ -720,6 +817,7 @@ a {
 }
 
 @media (max-width: 767px) and (min-width: 360px) {
+  .footer,
   .cont-three,
   .cont-one,
   .cont-two {
@@ -767,6 +865,7 @@ a {
 
 /*small*/
 @media (min-width: 768px) {
+  .footer,
   .cont-three,
   .cont-one,
   .cont-two {
@@ -796,6 +895,7 @@ a {
 
 /*med screan*/
 @media (min-width: 992px) {
+  .footer,
   .cont-three,
   .cont-one,
   .cont-two {
@@ -812,6 +912,7 @@ a {
 }
 
 @media (min-width: 1200px) {
+  .footer,
   .cont-three,
   .cont-one,
   .cont-two {
@@ -876,6 +977,15 @@ a {
   }
 }
 
+@keyframes arrow-more {
+  from {
+    left: 70%;
+  }
+  to {
+    left: 80%;
+    color: white;
+  }
+}
 @keyframes arrow-left {
   from {
     left: 10%;
@@ -893,4 +1003,3 @@ a {
     transform: rotate(360deg);
   }
 }
-
