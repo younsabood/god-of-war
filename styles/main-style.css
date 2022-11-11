@@ -680,7 +680,7 @@ a {
 .marrow {
   color: #000;
   position: absolute;
-  top : 50%;
+  top : 13%;
   animation-name: arrow-more;
   animation-duration: 1s;
   animation-delay: 0.5s;
